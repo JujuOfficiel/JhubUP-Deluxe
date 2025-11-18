@@ -30,7 +30,7 @@ local Window = Rayfield:CreateWindow({
       Subtitle = "The key will change every week",
       Note = "Join Discord and complete steps to get the key (.gg/Q5MZxNDtWa)", -- Use this to tell the user how to get a key
       FileName = "JujuHubWhitelist", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
-      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
       Key = {"KEY_g2fUIOGf52413djh12uzuhHUhuHjikDKkZPPZpk6455FEo2HUdfh"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
