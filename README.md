@@ -1,6 +1,6 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
-   Name = "🎩JHub🎩 | Undetected | v5.0.1 | DELUXE",
+   Name = "🎩JHub🎩 | Undetected | v5.0.3 | DELUXE",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "JHub - Loading, please wait.",
    LoadingSubtitle = "by Juju",
@@ -15,13 +15,13 @@ local Window = Rayfield:CreateWindow({
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "JHub_Key7893Deluxe416"
+      FileName = "JHub_K7893Deluxe416"
    },
 
    Discord = {
       Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
       Invite = "Q5MZxNDtWa", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
-      RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
 
    KeySystem = true, -- Set this to true to use our key system
@@ -29,17 +29,17 @@ local Window = Rayfield:CreateWindow({
       Title = "Juju Hub | KeySystem",
       Subtitle = "The key will change every week",
       Note = "Join Discord and complete steps to get the key (.gg/Q5MZxNDtWa)", -- Use this to tell the user how to get a key
-      FileName = "JujuHubWhitelist", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
-      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      FileName = "JHub_Deluxe_5-0-3", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"KEY_g2fUIOGf52413djh12uzuhHUhuHjikDKkZPPZpk6455FEo2HUdfh"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+      Key = {"KEY_GB78YUu6g57kTGbynfut8485btbTBFt4b6i6fh5K646giuUOd7"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
 
 local Tab = Window:CreateTab("📜Welcome",104365492568677) -- Title, Image
 
 local Paragraph = Tab:CreateParagraph({Title = "Welcome !", Content = "If you need any help join : https://discord.gg/Q5MZxNDtWa"})
-local Paragraph = Tab:CreateParagraph({Title = "New Version !", Content = "Updated on 11/03/2025 v5.0.1"})
+local Paragraph = Tab:CreateParagraph({Title = "New Version !", Content = "Updated on 11/20/2025 v5.0.3"})
 local Paragraph = Tab:CreateParagraph({Title = "For More Updates", Content = "Juju Hub is updated weekly if not, get the latest version on the the loadstring itself, scriptblox, if the script is broken or you can't find the latest version join the discord : https://discord.gg/Q5MZxNDtWa"})
 
 local Button = Tab:CreateButton({
@@ -54,7 +54,7 @@ local Paragraph = Tab:CreateParagraph({Title = "LocalConfig", Content = "Press K
 local Tab = Window:CreateTab("🎲Misc", 104365492568677) -- Title, Image
 
 local Button = Tab:CreateButton({
-   Name = "NEW - Aimbot, ESP, Hitbox",
+   Name = "Combat Script (Aimbot, ESP, Hitbox)",
    Callback = function()
    Rayfield:Notify({
    Title = "Script Executed",
@@ -63,6 +63,19 @@ local Button = Tab:CreateButton({
    Image = 104365492568677,
 })
    loadstring(game:HttpGet("https://raw.githubusercontent.com/ItsIYce/Iyce/refs/heads/main/main.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "NEW - VAPE Systems (All combat aimbot and things you need)",
+   Callback = function()
+   Rayfield:Notify({
+   Title = "Script Executed",
+   Content = "Have Fun !",
+   Duration = 6.5,
+   Image = 104365492568677,
+})
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/AsuraXowner/SentinelVAPE/refs/heads/main/NewMainScript.lua", true))()
    end,
 })
 
@@ -80,7 +93,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-   Name = "NEW - Dex",
+   Name = "Dex",
    Callback = function()
    Rayfield:Notify({
    Title = "Script Executed",
@@ -93,7 +106,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-   Name = "Mobile Aimbot (BETTER)",
+   Name = "Mobile Aimbot",
    Callback = function()
    Rayfield:Notify({
    Title = "Script Executed",
@@ -115,6 +128,19 @@ local Button = Tab:CreateButton({
    Image = 104365492568677,
 })
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Guest3D/ZirconHub/refs/heads/main/StreamSniper.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "NEW - Bring Parts",
+   Callback = function()
+   Rayfield:Notify({
+   Title = "Script Executed",
+   Content = "Have Fun !",
+   Duration = 6.5,
+   Image = 104365492568677,
+})
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/JujuOfficiel/bring-parts/refs/heads/main/bring%20parts"))()
    end,
 })
 
@@ -649,6 +675,33 @@ local Button = Tab:CreateButton({
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "NEW - Zombie Attack",
+   Callback = function()
+   Rayfield:Notify({
+   Title = "Script Executed",
+   Content = "Have Fun !",
+   Duration = 6.5,
+   Image = 104365492568677,
+})
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/rrixh/zombieattaxk/main/az_lulaslollipop",true))();
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "NEW - 99 Nights in the forest",
+   Callback = function()
+   Rayfield:Notify({
+   Title = "Script Executed",
+   Content = "Have Fun !",
+   Duration = 6.5,
+   Image = 104365492568677,
+})
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VWExtra/main/NightsInTheForest.lua", true))("t.me/i_s_m_max")
+   end,
+})
+
+
 local Tab = Window:CreateTab("Credits", 104365492568677) -- Title, Image
 
 local Paragraph = Tab:CreateParagraph({Title = "Creator", Content = "JujuOfficiel"})
@@ -656,8 +709,8 @@ local Paragraph = Tab:CreateParagraph({Title = "Helper", Content = "hb2obsk"})
 local Paragraph = Tab:CreateParagraph({Title = "Supporter", Content = "secretmodedajyo"})
 
 Rayfield:Notify({
-   Title = "New Version",
-   Content = "This new version is still in BETA hope bugs or callback errors !",
+   Title = "Deluxe",
+   Content = "Thanks For Using Deluxe version !",
    Duration = 6.5,
    Image = 4483362458,
 })
